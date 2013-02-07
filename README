@@ -1,6 +1,6 @@
-[Automator script: https://gist.github.com/chpasswd/dbb3fff60dfb8cb3212d/raw/d6249210dc0fe72d3fd435abfcc9eeff55ba2ba6/egg.sh
+Automator script: https://gist.github.com/chpasswd/dbb3fff60dfb8cb3212d/raw/d6249210dc0fe72d3fd435abfcc9eeff55ba2ba6/egg.sh
 
-Copia el codigo del automator script en `egg.sh` y despues ejecutado como script bash `bash egg.sh`
+Copia el codigo del automator script en un archivo llamado "egg.sh" y despues ejecutalo como script bash: "bash egg.sh"
 
 Una vez creado tu eggdrop modifica tu config: https://github.com/chpasswd/egg/blob/master/eggdrop.conf
 
@@ -16,4 +16,4 @@ source scripts/oauth.tcl
 
 source scripts/base64.tcl
 
-Una vez terminado, para correr tu bot, dentro de tu carpeta eggdrop ejecuta: `./eggdrop eggdrop.conf`
+Una vez terminado, para correr tu bot, dentro de tu carpeta eggdrop ejecuta: "./eggdrop eggdrop.conf"
