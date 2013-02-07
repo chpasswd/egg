@@ -122,54 +122,6 @@ namespace eval ::rss-synd {
 
 
 
-	set rss(SerActivistas) {
-
-		"url"			"http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=SerActivistas"
-
-		"channels"		"#activistas"
-
-		"database"		"./scripts/wiki.db"
-
-		"output"		"[\0024T7w8i1t9t5e10r11:[Ser Activista 4N7e8w9s\] @@item!title@@ - @@item!guid@@"
-
-		"trigger"		"!wiki"
-
-
-	}
-
-set rss(AnonOpsLatino) {
-
-		"url"			"http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=anonopslatino"
-
-		"channels"		"#latinoamerica"
-
-		"database"		"./scripts/latino.db"
-
-		"output"		"[\0029Twitter:[AnonOpsLatino 4N7e8w9s\] @@item!title@@ - @@item!guid@@"
-
-		"trigger"		"!lat"
-
-
-	}
-
-set rss(Enfoque_Global) {
-
-		"url"			"http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=Enfoque_Global"
-
-		"channels"		"#openfoqueglobal"
-
-		"database"		"./scripts/enfoque.db"
-
-		"output"		"[\0029Twitter:[Enfoque_Global 4N7e8w9s\] @@item!title@@ - @@item!guid@@"
-
-		"trigger"		"!enf"
-
-
-	}
-
-
-
-
 	# The default settings, If any setting isnt set for an individual feed
 
 	#   it'll use the default listed here
