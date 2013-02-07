@@ -1,19 +1,19 @@
-#!/bin/bash 
-wget ftp://ftp.eggheads.org/pub/eggdrop/source/1.6/eggdrop1.6.21.tar.gz
-gunzip -c eggdrop1.6.21.tar.gz | tar xopf -
-cd eggdrop1.6.21
-./configure
-make config
-make
-make install
-cd ..
-rm -r eggdrop1.6.21 eggdrop1.6.21.tar.gz
-cd eggdrop
-cd scripts
-wget https://github.com/chpasswd/tcl/archive/master.zip
-unzip master.zip
-cd tcl-master
-mv * ..
-cd ..
-rm -r tcl-master 
-rm master.zip
+[Automator script: https://gist.github.com/chpasswd/dbb3fff60dfb8cb3212d/raw/d6249210dc0fe72d3fd435abfcc9eeff55ba2ba6/egg.sh
+
+Copia el codigo del automator script en `egg.sh` y despues ejecutado como script bash `bash egg.sh`
+
+Una vez creado tu eggdrop modifica tu config: https://github.com/chpasswd/egg/blob/master/eggdrop.conf
+
+
+Ej:
+Si quieres el modulo de twitter necesitaras cargar los siguientes scripts agregandolos al final de tu eggdrop.conf:
+
+source scripts/twitter.tcl
+
+source scripts/sha1.tcl
+
+source scripts/oauth.tcl
+
+source scripts/base64.tcl
+
+Una vez terminado, para correr tu bot, dentro de tu carpeta eggdrop ejecuta: `./eggdrop eggdrop.conf`
